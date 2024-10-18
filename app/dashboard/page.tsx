@@ -11,7 +11,7 @@ const Dashboard = () => {
        <Banner />
       </div>
       {/*  */}
-      <div className='flex justify-between w-full mt-5'>
+      <div className='flex justify-between w-full mt-20'>
         <div className='flex flex-col'>
           <h1 className='font-semibold text-5xl'>Listin Now</h1>
           <p>

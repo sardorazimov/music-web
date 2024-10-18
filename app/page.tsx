@@ -4,4 +4,7 @@ import { redirect } from "next/navigation";
 
  export function   page (){
    return redirect('dashboard')
- }
+ 
+  }
+
+

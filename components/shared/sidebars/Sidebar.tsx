@@ -37,19 +37,19 @@ const menuItems = [
 const Sidebar = () => {
   const pathname = usePathname();
   return (
-    <div className="w-52 py-10 border-r  fixed  border-white/15 bg-white/5 text-white   h-screen">
+    <div className="w-52 py-10 border-r  fixed  border-white/15  overflow-y-auto   h-screen">
         <div className="relative ">
         {menuItems.map((section, index) => (
         <div key={index} className="mb-6">
-          <h2 className="text-sm font-bold mb-2 border-b border-white/20">{section.section}</h2>
+          <h2 className="text-xl text-center font-bold mb-2 border-b border-white/20">{section.section}</h2>
           <ul>
             {section.items.map((item, itemIndex) => {
               const isActive = pathname === item.path
               return (
                 <li key={itemIndex} className="mb-1">
                   <Link href={item.path} className={`flex items-center p-2 rounded-md ${isActive ? 'bg-zinc-800' : 'hover:bg-zinc-800'}`}>
-                    <item.icon className="w-7 h- mr-3" />
-                    <span className={`text-sm ${isActive ? 'font-semibold' : ''}`}>{item.name}</span>
+                    <item.icon className="w-7 h- mr-3 text-yellow-50" />
+                    <span className={`text-md ${isActive ? 'font-semibold' : ''}`}>{item.name}</span>
                   </Link>
                 </li>
               )
