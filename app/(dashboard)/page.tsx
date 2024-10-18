@@ -4,7 +4,7 @@ import { Input } from '@/components/ui/input'
 import { Plus } from 'lucide-react'
 import React from 'react'
 
-const Dashboard = () => {
+const page = () => {
   return (
     <div className='flex flex-col w-full h-screen '>
       <div className='flex h-14 w-full flex-col   py-3'>
@@ -30,4 +30,4 @@ const Dashboard = () => {
   )
 }
 
-export default Dashboard
+export default page
